@@ -20,15 +20,11 @@ git clone https://github.com/DamjannM/REST-API-using-Express.js-and-PostgreSQL.g
 cd REST-API-using-Express.js-and-PostgreSQL
 ```
 
-2. **Generate the Prisma Client**:
-
-`npx prisma generate`
-
-3. **Build your docker images**:
+2. **Build your docker images**:
 
 `docker compose build`
 
-4. **Create PostgreSQL migrations and apply them**:
+3. **Create PostgreSQL migrations and apply them**:
 
 `docker compose run app npx prisma migrate dev --name init`
 
@@ -36,11 +32,11 @@ _Also_ - to run/apply migrations if necessary:
 
 `docker-compose run app npx prisma migrate deploy`
 
-5. **Boot up docker containers**:
+4. **Boot up docker containers**:
 
 `docker compose up`
 
-6.  **Access the Server**:
+5.  **Access the Server**:
 
 Open `http://localhost:5000/` in your browser to see the server is running message.
 
